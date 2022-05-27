@@ -1,0 +1,49 @@
+.text_area-container {
+  width: 315px;
+  height: 58px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.text_area-textinput {
+  transition: 0.3s;
+}
+.text_area-textinput:active {
+  box-shadow: 2px 2px 20px 0px #f97b15;
+  border-color: var(--dl-color-backgrounds-primary);
+}
+@media(max-width: 767px) {
+  .text_area-container {
+    width: 438px;
+    height: 86px;
+    margin-top: var(--dl-space-space-unit);
+    padding-bottom: 0px;
+  }
+  .text_area-text {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .text_area-textinput {
+    width: 100%;
+    padding: var(--dl-space-space-unit);
+    padding-top: 0px;
+    padding-left: 0px;
+    border-radius: 32px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media(max-width: 479px) {
+  .text_area-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .text_area-textinput {
+    width: 320px;
+    height: 75px;
+    padding: var(--dl-space-space-unit);
+    align-self: center;
+    border-radius: 32px;
+  }
+}
